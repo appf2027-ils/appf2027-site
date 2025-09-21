@@ -94,6 +94,14 @@ body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222;background:var
   }
 }
 
+/* CSS để định dạng gạch dài */
+    .divider {
+      border: 0;
+      height: 2px;
+      background: #2c3e50; /* Màu xanh đậm để phù hợp với chủ đề học thuật */
+      margin: 20px 0; /* Khoảng cách trên dưới */
+      width: 100%; /* Chiều dài toàn bộ */
+    }
 
 .main-nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
 .main-nav a{color:#fff;text-decoration:none;font-weight:600;padding:6px 10px;border-radius:6px}
@@ -122,3 +130,20 @@ body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222;background:var
   .page-wrapper{flex-direction:column}
   .sidebar{flex:1 1 auto;width:100%;position:relative;top:auto}
 }
+
+/* CSS cho nút Details */
+    .btn-details {
+      display: inline-block;
+      padding: 10px 20px;
+      background:var(--accent);
+      color: #fff; /* Chữ trắng */
+      text-decoration: none; /* Bỏ gạch chân */
+      border-radius: 5px; /* Bo góc */
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease; /* Chuyển màu khi hover */
+    }
+    .btn-details:hover {background-color: #34495e; /* Màu xanh đậm hơn */}
+
+
