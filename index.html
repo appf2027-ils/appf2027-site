@@ -180,10 +180,83 @@ Address: 145 Ly Chinh Thang Street, Xuan Hoa Ward, Ho Chi Minh City, Vietnam</p>
 
     <section id="registration" class="section alt">
       <h3>Registration</h3>
-<hr class="divider"> <!-- G?ch dài ???c thêm vào -->
+<hr class="divider"> <!-- Gach dai duoc them vao -->
       <p class="lead">Registration Period</p>
-<p><b>Early Bird Registration</b>: August 1st 2026 to November 1st 2026 (5:00 pm, ICT=UTC+7)<br>
-<b>Standard Registration:</b> November 2nd 2026 to March 2nd 2027 (5:00 pm, ICT)</p>
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!- Registration period table ->
+<div class="p-4 sm:p-8 max-w-4xl mx-auto font-sans">
+    
+    <!-- Table Container -->
+    <div class="overflow-x-auto shadow-xl rounded-lg border border-gray-100">
+        <table class="min-w-full divide-y divide-gray-200 bg-white">
+            <thead class="bg-green-600 text-white">
+                <tr>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+                        Category
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+                        Start Date
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+                        End Date
+                        <span class="block font-normal normal-case text-xs">(5:00 PM ICT/UTC+7)</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+                <!-- Row 1: Online Registration Open -->
+                <tr class="bg-gray-50 hover:bg-green-50 transition duration-150">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-green-700">
+                        Online Registration Open
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 font-medium">
+                        July 20th, 2026 
+                        <span class="block text-xs text-gray-500">(9:00 AM ICT/UTC+7)</span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400 italic">
+                        N/A (System Go-Live)
+                    </td>
+                </tr>
+
+                <!-- Row 2: Early Bird Registration -->
+                <tr class="bg-white hover:bg-green-50 transition duration-150">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800">
+                        Early Bird Registration
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                        August 1st, 2026
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600 font-semibold">
+                        November 1st, 2026
+                    </td>
+                </tr>
+
+                <!-- Row 3: Standard Registration -->
+                <tr class="bg-gray-50 hover:bg-green-50 transition duration-150">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800">
+                        Standard Registration
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                        November 2nd, 2026
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600 font-semibold">
+                        March 2nd, 2027
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!- Timezone Note ->
+    <p class="mt-4 text-sm text-gray-500 italic">
+        *Note: All deadlines are 5:00 PM ICT (Indochina Time), which corresponds to UTC+7.
+    </p>
+</div>
+
+  <!- Registration Fee ->
       <p class="lead">Registration Fee</p>
   <style>
     /* CSS cho section Registration Fee */
@@ -260,26 +333,27 @@ Address: 145 Ly Chinh Thang Street, Xuan Hoa Ward, Ho Chi Minh City, Vietnam</p>
         </tr>
       </tbody>
     </table>
+
+<!- Notes with numbering restored ->
     <div class="notes">
-      <ol>
+      <ol class="list-decimal pl-6 space-y-2">
         <li>The full delegate and student fees cover an abstract book, a congress bag, and admission to the opening and closing ceremonies. The fee also includes access to all scientific sessions, the welcoming reception and ice breaker (on the evening of Day 1), the conference banquet (on Day 4, after the closing ceremony), and all tea breaks and lunches during the conference.<br>
           <strong>NOTE:</strong> Congress bags will not be handed out to accompanying persons.</li>
         <li>Students are requested to send the copy of student ID card (scanned PDF or photograph of the card) to the congress organizer by e-mail (<a href="mailto:appf2027vn@gmail.com">appf2027vn@gmail.com</a>).</li>
         <li>Accompanying persons should be your family members, not your colleagues.<br>
           Accompanying persons fee includes: participation to coffee break and social events.</li>
-        <li><b>A Warm Welcome to Our Vietnamese Colleagues</b><br>
-          The 10th APPF represents a historic milestone as we proudly host this conference in Vietnam for the very first time. The Organizing Committee has established a fund to provide a special registration fee, aimed at encouraging the maximum possible participation from local Vietnamese.<br>
-          We look forward to welcoming you to this significant event. Please contact us at appf2027vn@gmail.com for guidance on how to access this special rate.</li>
 
       </ol>
     </div>
 <p>Way to registration: Registration is available online with payment must be made in USD for international participants and in VND for Vietnamese participants by bank transfer or credit card.</p>
 </head>
+
 <body>
   <nav>
     <a href="registration.html" class="btn-details">Registration</a>
   </nav>
 </body>
+
     </section>
 
 
