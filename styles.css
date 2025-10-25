@@ -174,3 +174,134 @@ body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222;background:var
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+
+/* --- Style for Contact Section --- */
+#contact .lead {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+#contact p {
+  margin-bottom: 1.25em;
+}
+
+
+/* --- Contact Box --- */
+.contact-box {
+  background-color: #f2f2f2;     /* light grey background */
+  border-left: 5px solid #006680; /* accent stripe (same as your theme color) */
+  padding: 20px 25px;
+  border-radius: 8px;
+  margin: 25px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contact-box p {
+  margin-bottom: 1em;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-box a {
+  color: #006680;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* === Footer with shorter seaweed background & stronger fade === */
+.footer {
+  position: relative;
+  background: url('images/seaweed_footer.jpg') center bottom / cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px 30px;  /* reduced overall height */
+  overflow: hidden;
+  min-height: 200px;        /* ensures consistent look */
+}
+
+/* --- stronger fade zone at top --- */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;  /* fade height increased (was 100px) */
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.9) 30%,
+    rgba(255, 255, 255, 0.6) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 1;
+}
+
+/* === Footer with seaweed background & fading top === */
+.footer {
+  position: relative;
+  background: url('images/seaweed_footer.jpg') center bottom / cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 40px; /* more padding on top for fade area */
+  overflow: hidden;
+}
+
+/* fade-to-white overlay (top of photo) */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* height of fading zone */
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0) 100%);
+  z-index: 1;
+}
+
+/* optional semi-transparent overlay for darker text contrast */
+.footer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+/* text content */
+.footer-content {
+  position: relative;
+  z-index: 3;
+}
+
+.footer-content p {
+  margin: 6px 0;
+  font-size: 0.95em;
+}
+
+.footer-content a {
+  color: #cdefff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* make the background photo's height shorter */
+.footer {
+  position: relative;
+  background: url('images/seaweed_footer.jpg') center bottom / cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px 20px; /* reduce top/bottom padding */
+  min-height: 100px;       /* shorter total height */
+  overflow: hidden;
+}
