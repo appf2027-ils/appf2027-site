@@ -27,7 +27,7 @@ body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222;background:var
 
 .header-content {
   position: absolute;
-  top: 0;
+  top: -30px;   /* pushes it 30 px higher */
   left: 0;
   right: 0;
   display: flex;
@@ -47,13 +47,23 @@ body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222;background:var
 
 .right-text {
   text-align: right;
-  font-size: 0.9em;
+  font-size: clamp(0.8em, 1.6vw, 1.2em);
+  font-weight: bold;   /* makes the text bold */
+  margin-left: auto;
+  background: rgba(0, 0, 0, 0.4);/* black, transparent 40% */
+  padding: 5px 8px 5px 2px;  /* top right bottom left */    
+  border-radius: 8px;             /* rounded corners */
+  display: inline-block;          /* fit content */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .left-text h1 {
-  font-size: 4em;
+  text-align: left;
+  position: relative;
+  top: -20px;   /* moves only APPF 2027 upward */
+  font-size: clamp(1.5em, 4vw, 4em);
   margin: 0;
-}
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);}
 
 .center-bottom-text {
   position: absolute;
@@ -66,8 +76,10 @@ body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222;background:var
 }
 
 .center-bottom-text p.tag {
-  font-size: 1.2em;
+  font-size: clamp(0.9em, 1.8vw, 1.6em);
   margin: 0;
+  padding: 0 17%;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 /* Adjustments for smaller screens */
@@ -91,7 +103,10 @@ body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222;background:var
 
   .right-text {
     font-size: 0.8em;
+    text-align: right;
+    width: 100%;
   }
+
 }
 
 /* CSS để định dạng gạch dài */
@@ -146,4 +161,16 @@ body{margin:0;font-family:Arial, Helvetica, sans-serif;color:#222;background:var
     }
     .btn-details:hover {background-color: #34495e; /* Màu xanh đậm hơn */}
 
+/* --- Convener photo inside Welcome Section --- */
+.convener-photo {
+  text-align: left;          /* or center, if you prefer */
+  margin: 10px 0;
+}
+
+.convener-photo img {
+  width: 120px;              /* portrait size */
+  height: auto;
+  border-radius: 10px;       /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
